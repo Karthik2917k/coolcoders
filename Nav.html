@@ -2,37 +2,49 @@
     <head>
         <title>Navbar</title>
         <style>
-            #container{
-             display:grid;
-             grid-template-columns: repeat(2,1fr);
-             height:60px;
-             justify-content: space-between;
-             background-color:rgb(2, 2, 22);
-             border-radius: 12px;
-             color:white;
+            li, a{
+                font-size: 20px;
+                color:#ffffff;
+                text-decoration: none;
             }
-            #container>div:nth-child(2){
-                display:flex;
-                justify-content: right;
-
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3px 10%;
+                background-color:rgb(27, 30, 33);
+                border-radius: 4px;
             }
-            p{
-                margin:25px;
-                
+            h1{
+                color: white;
             }
-
+            .nav_links{
+                list-style: none;
+            }
+            .nav_links li{
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            .nav_links li a{
+                transition:all 0.3s ease 0s;
+            }
+            .nav_links li a:hover{
+                color: aliceblue;
+            }
         </style>
     </head>
     <body>
-        <div id ="container">
-            <div><p>Rebook</p></div>
-            <div>
-            <p>Men</p>
-            <p>Women</p>
-            <p>Login</p>
-            <p>SignUp</p>
-            </div>
-        </div>
+        <header>
+            <h1>Rebook</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="./Men.html">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./sign.html">SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
         
     </body>
 </html>
